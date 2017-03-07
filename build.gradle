@@ -113,7 +113,7 @@ subprojects {
 repositories {
     // todo Some repos are needed only for some configs. Declare them just for the configuration once Gradle allows this.
 //    mavenCentral() // default, tools
-    maven { url "http://www.aQute.biz/repo" } // tools
+    maven { url "https://maven-us.nuxeo.org/nexus/content/repositories/public" } // tools
     maven { url "http://repository.jboss.org/maven2" } // examples, tools
 }
 
