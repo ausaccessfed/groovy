@@ -14,7 +14,9 @@ allprojects {
     group = 'org.codehaus.groovy'
     version = groovyVersion
     repositories {
-        mavenCentral()
+      maven {
+        url "https://repo1.maven.org/maven2"
+      }
     }
 
     apply plugin: 'checkstyle'
@@ -111,10 +113,11 @@ subprojects {
 }
 
 repositories {
-    // todo Some repos are needed only for some configs. Declare them just for the configuration once Gradle allows this.
-//    mavenCentral() // default, tools
     maven { url "https://maven-us.nuxeo.org/nexus/content/repositories/public" } // tools
-    maven { url "http://repository.jboss.org/maven2" } // examples, tools
+    maven { url "https://repository.jboss.org/maven2" } // examples, tools
+      maven {
+        url "https://repo1.maven.org/maven2"
+      }
 }
 
 // todo do we need compile and runtime scope for examples?
