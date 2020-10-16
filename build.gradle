@@ -195,7 +195,7 @@ dependencies {
     }
     tools "org.ow2.asm:asm-all:4.0"
     tools "com.thoughtworks.qdox:qdox:1.12"
-    tools "biz.aQute:bnd:0.0.401"
+    // tools "biz.aQute:bnd:0.0.401"
 
     examplesCompile "lucene:lucene:1.4.3"
     examplesCompile "org.eclipse:osgi:3.5.0.v20090520"
